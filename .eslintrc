@@ -1,0 +1,42 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb-base"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".ts",
+          ".d.ts"
+        ]
+      }
+    }
+  },
+  "globals": {
+    "Deno": "readonly",
+    "fetch": "readonly"
+  },
+  "rules": {
+    "no-console": "off",
+    "comma-dangle": ["error", "never"],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "optionalDependencies": false
+      }
+    ],
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "no-nested-ternary": "off",
+    "no-restricted-syntax": "off",
+    "no-unused-expressions": "off"
+  }
+}
