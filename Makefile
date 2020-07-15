@@ -1,4 +1,4 @@
-.PHONY: dev test fmt fmt-check
+.PHONY: dev test fmt fmt-check first-release release
 
 dev:
 	@deno run --allow-net --allow-run --allow-env --allow-read --allow-write --unstable ./src/mod.ts
@@ -13,3 +13,9 @@ fmt:
 
 fmt-check:
 	@deno fmt --check ./src
+
+first-release:
+	@npx standard-version --first-release
+
+release:
+	@npx standard-version --first-release
