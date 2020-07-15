@@ -6,7 +6,6 @@ import {
   yellow,
   cyan,
   gray,
-  red,
   bold,
   inverse,
   AsciiTable,
