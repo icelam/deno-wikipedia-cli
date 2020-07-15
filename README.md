@@ -6,9 +6,10 @@
     Search anything on Wikipedia from your terminal.
 </p>
 <p align="center">
-    <a href="https://deno.land/"><img height="20" src="https://img.shields.io/badge/made_with-Deno-000000.svg?logo=deno" alt="Made with Deno"></a>
+    <a href="https://deno.land/"><img height="20" src="https://img.shields.io/badge/made_with-Deno_1.2.0-000000.svg?logo=deno" alt="Made with Deno"></a>
     <a href="https://www.typescriptlang.org/"><img height="20" src="https://img.shields.io/badge/built_with-TypeScript-007acc.svg?logo=typescript" alt="Built with TypeScript"></a>
     <a href="./LICENSE"><img height="20" src="https://img.shields.io/github/license/icelam/deno-wikipedia-cli" alt="License"></a>
+    <a href="https://github.com/icelam/deno-wikipedia-cli/actions?query=workflow%3A%22Unit+test%22"><img height="20" src="https://github.com/icelam/deno-wikipedia-cli/workflows/Unit%20test/badge.svg" alt="Unit test"></a>
 </p>
 
 ## Important Notes
