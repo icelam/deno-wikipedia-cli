@@ -5,6 +5,9 @@ on:
       - '**'
     tags-ignore:
       - '**' #prevent double build on release tag
+  pull_request:
+    branches:
+      - '**'
 
 jobs:
   unit-test:
@@ -13,7 +16,8 @@ jobs:
       matrix:
         deno-version: [1.2.0]
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout repo
+        uses: actions/checkout@v2
       - name: Use Deno ${{ matrix.deno-version }}
         uses: denolib/setup-deno@master
         with:
