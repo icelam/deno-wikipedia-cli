@@ -1,4 +1,14 @@
-![Deno Wikipedia CLI](./docs/banner.png)
+<p align="center">
+    <img alt="Deno Wikipedia CLI" src="./docs/logo.svg" width="220" />
+</p>
+<h1 align="center">Deno Wikipedia CLI</h1>
+<p align="center">
+    Search anything on Wikipedia from your terminal.
+</p>
+<p align="center">
+    <a href="https://deno.land/"><img height="20" src="https://img.shields.io/badge/made_with-Deno-000000.svg?logo=deno" alt="Made with Deno"></a>
+    <a href="https://www.typescriptlang.org/"><img height="20" src="https://img.shields.io/badge/built_with-TypeScript-007acc.svg?logo=typescript" alt="Built with TypeScript"></a>
+</p>
 
 ## Important Notes
 This is a experimental project written in [Deno](https://github.com/denoland/deno) version 1.2.0, with `std` version 0.61.0. Some feature might be unstable at the moment.
