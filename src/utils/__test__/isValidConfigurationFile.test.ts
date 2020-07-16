@@ -1,5 +1,5 @@
 import isValidConfigurationFile from '../isValidConfigurationFile.ts';
-import { assertEquals } from '../../deps.ts';
+import { Rhum } from '../../deps.ts';
 
 const testData = [
   { input: null, expected: false },
@@ -7,8 +7,14 @@ const testData = [
   { input: { language: 'xxx' }, expected: false }
 ];
 
-testData.forEach(({ input, expected }) => {
-  Deno.test(`should identify ${JSON.stringify(input)} as ${expected ? '' : 'in'}valid configuration file`, () => {
-    assertEquals(isValidConfigurationFile(input), expected);
+Rhum.testPlan('isValidConfigurationFile.ts', () => {
+  Rhum.testSuite('isValidConfigurationFile()', () => {
+    testData.forEach(({ input, expected }) => {
+      Rhum.testCase(`should identify ${JSON.stringify(input)} as ${expected ? '' : 'in'}valid configuration file`, () => {
+        Rhum.asserts.assertEquals(isValidConfigurationFile(input), expected);
+      });
+    });
   });
 });
+
+Rhum.run();

@@ -1,5 +1,5 @@
 import convertYesNoToBoolean from '../convertYesNoToBoolean.ts';
-import { assertEquals } from '../../deps.ts';
+import { Rhum } from '../../deps.ts';
 
 const testData = [
   { input: 'Yes', expected: true },
@@ -16,8 +16,14 @@ const testData = [
   { input: '1', expected: null }
 ];
 
-testData.forEach(({ input, expected }) => {
-  Deno.test(`convert '${input}' to ${expected}`, () => {
-    assertEquals(convertYesNoToBoolean(input), expected);
+Rhum.testPlan('convertYesNoToBoolean.ts', () => {
+  Rhum.testSuite('should convertYesNoToBoolean()', () => {
+    testData.forEach(({ input, expected }) => {
+      Rhum.testCase(`convert '${input}' to ${expected}`, () => {
+        Rhum.asserts.assertEquals(convertYesNoToBoolean(input), expected);
+      });
+    });
   });
 });
+
+Rhum.run();

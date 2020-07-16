@@ -71,4 +71,4 @@ make release
 * [ ] Use [Import Maps](https://deno.land/manual/linking_to_external_code/import_maps) for better maniaging dependencies' version
 * [ ] [Permission detection](https://deno.land/typedoc/classes/deno.permissions.html) without using `--unstable` flag
 * [ ] Get [terminal size](https://github.com/denoland/deno/pull/6520) without using `--unstable` flag
-* [ ] Better way to organize test suits, might consider using [Rhum](https://deno.land/x/rhum)
+* [x] Better way to organize test suits, might consider using [Rhum](https://deno.land/x/rhum)? 

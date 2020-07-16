@@ -11,4 +11,4 @@ export { encodeUrl } from 'https://deno.land/x/encodeurl@1.0.0/mod.ts';
 export { default as AsciiTable } from 'https://deno.land/x/ascii_table@20dd719/mod.ts';
 
 /* Test Dependencies */
-export { assertEquals } from 'https://deno.land/std@0.61.0/testing/asserts.ts';
+export { Rhum } from 'https://deno.land/x/rhum@v1.0.1/mod.ts';

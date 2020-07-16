@@ -10,7 +10,7 @@ dev:
 
 # Run unit test
 test:
-	@deno test --unstable ${SRC_FOLDER}
+	@deno test --unstable -A ${SRC_FOLDER}
 
 # Dependencies inspector
 deps-info:
@@ -22,7 +22,7 @@ lock-deps:
 
 # Reload all dependencies and create lock file
 reload-deps:
-	@deno ${SRC_FOLDER}${DEPS_FILE} cache --reload --lock=lock.json --lock-write
+	@deno cache ${SRC_FOLDER}${DEPS_FILE} --reload --lock=lock.json --lock-write
 
 # Print documentation for each exported members (not in use)
 # Currently only support 'export <declaration>' and 'export ... from ...' syntax
