@@ -17,9 +17,9 @@ const testData = [
 ];
 
 Rhum.testPlan('convertYesNoToBoolean.ts', () => {
-  Rhum.testSuite('should convertYesNoToBoolean()', () => {
+  Rhum.testSuite('convertYesNoToBoolean()', () => {
     testData.forEach(({ input, expected }) => {
-      Rhum.testCase(`convert '${input}' to ${expected}`, () => {
+      Rhum.testCase(`should convert '${input}' to ${expected}`, () => {
         Rhum.asserts.assertEquals(convertYesNoToBoolean(input), expected);
       });
     });
