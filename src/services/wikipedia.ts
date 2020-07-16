@@ -1,5 +1,5 @@
 import { encodeUrl } from '../deps.ts';
-import { makeRequest } from '../utils/index.ts';
+import { makeRequest } from '../utils/mod.ts';
 import { IMakeRequestSuccessResponse, IMakeRequestFailureResponse } from '../types.ts';
 import { DEFAULT_WIKIPEDIA_LANGUAGE } from '../constants.ts';
 

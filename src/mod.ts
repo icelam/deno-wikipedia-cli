@@ -13,7 +13,7 @@ import {
   readJsonSync,
   writeJsonSync
 } from './deps.ts';
-import { WikipediaService } from './services/index.ts';
+import WikipediaService from './services/wikipedia.ts';
 import {
   displayLogo,
   confirm,
@@ -25,7 +25,7 @@ import {
   getConfigurationFilePath,
   isValidLanguageCode,
   isValidConfigurationFile
-} from './utils/index.ts';
+} from './utils/mod.ts';
 import {
   PermissionType, PermissionStatusType, ArgumentsType
 } from './types.ts';
