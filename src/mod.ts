@@ -40,7 +40,7 @@ const normalizedArgs: { [key: string]: string | undefined } = {};
  * Display usage and available options for this CLI.
  */
 const displayHelp = async (): Promise<void> => {
-  const { terminalWidth } = await getTerminalSize();
+  const { columns: terminalWidth } = await getTerminalSize();
   const descriptionMaxLength = Math.floor((terminalWidth - 20) / 2);
 
   const cliDescription: string = bold(green('Search anything on Wikipedia from your terminal'));
