@@ -20,8 +20,8 @@ export type OptionsType = {
 
 /* getTerminalSize */
 export interface ITerminalSize {
-  terminalWidth: number;
-  terminalHeight: number;
+  columns: number;
+  rows: number;
 }
 
 /* makeRequest */
