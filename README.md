@@ -59,16 +59,28 @@ You can run test cases using the following command:
 make test
 ```
 
-## Change Log
+## Update lock file
+You can update the lock file by running the following command:
+```bash
+make lock-deps
+```
+
+## Change Log / Release
 Change log is available [here](./CHANGELOG.md).
 You can update the change log by running the following command:
 ```bash
 make release
 ```
 
+A Github workflow has been set to automatically create release when `vX.X.X` tag is pushed.
+
 ## Roadmap
 * [ ] Implement logging, might introduce something like [log4deno](https://deno.land/x/log4deno)?
 * [ ] Use [Import Maps](https://deno.land/manual/linking_to_external_code/import_maps) for better maniaging dependencies' version
 * [ ] [Permission detection](https://deno.land/typedoc/classes/deno.permissions.html) without using `--unstable` flag
 * [ ] Get [terminal size](https://github.com/denoland/deno/pull/6520) without using `--unstable` flag
-* [x] Better way to organize test suits, might consider using [Rhum](https://deno.land/x/rhum)? 
+* [x] ~~Better way to organize test suits, might consider using [Rhum](https://deno.land/x/rhum)?~~
+
+## Others
+* [ ] Limit or [revoke the permission](https://deno.land/manual/examples/permissions) when it is not needed (e.g. search flow does not need write permission, read permission is not needed after getting config file, net is not needed for config flow). But need to test if installed excutable would be affected on next run.
+* [ ] Good [reference](https://github.com/drashland/deno-drash/tree/master/tests) for test cases
