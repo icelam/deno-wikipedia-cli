@@ -2,8 +2,7 @@
  * Get configuration file path.
  */
 const getConfigurationFilePath = (): string => {
-  const homeEnviroment: string | undefined = Deno.env.get('HOME');
-  const homePath = homeEnviroment ?? '.';
+  const homePath: string = Deno.env.get('HOME') ?? '.';
   return `${homePath}/.wiki-cli.json`;
 };
 
