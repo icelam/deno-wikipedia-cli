@@ -1,4 +1,4 @@
-.PHONY: dev test deps-info fmt fmt-check first-release release
+.PHONY: dev test deps-info lock-deps reload-deps fmt fmt-check first-release release
 
 SRC_FOLDER=	./src
 ENTRY_FILE=	/mod.ts
