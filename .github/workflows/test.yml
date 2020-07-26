@@ -14,11 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        deno-version: [1.2.0]
+        deno-version: [1.2.1]
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
-      - name: Use Deno ${{ matrix.deno-version }}
+      - name: Setup Deno ${{ matrix.deno-version }}
         uses: denolib/setup-deno@master
         with:
           deno-version: ${{ matrix.deno-version }}

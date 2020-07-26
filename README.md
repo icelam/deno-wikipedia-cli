@@ -6,7 +6,7 @@
     Search anything on Wikipedia from your terminal.
 </p>
 <p align="center">
-    <a href="https://deno.land/"><img height="20" src="https://img.shields.io/badge/made_with-Deno_1.2.0-000000.svg?logo=deno" alt="Made with Deno"></a>
+    <a href="https://deno.land/"><img height="20" src="https://img.shields.io/badge/made_with-Deno_1.2.1-000000.svg?logo=deno" alt="Made with Deno"></a>
     <a href="https://www.typescriptlang.org/"><img height="20" src="https://img.shields.io/badge/built_with-TypeScript-007acc.svg?logo=typescript" alt="Built with TypeScript"></a>
     <a href="./LICENSE"><img height="20" src="https://img.shields.io/github/license/icelam/deno-wikipedia-cli?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAEFCu8CAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAHKADAAQAAAABAAAAHAAAAABHddaYAAAC5UlEQVRIDd2WPWtVQRCGby5pVASLiGghQSxyG8Ui2KWwCfkH9olY2JneQkiR0oCIxH/gB+qVFDYBIWBAbAIRSbCRpLXwIxLiPT7vnNm9e87ZxJtUwYH3zO47Mzv7Mbv3tlo5KYriGtgAJ81OY1ENdG/YI4boFEOI911BXgY/pdtwGuAtXpvmB1tAXHDnUolE5urkPOQo6MqA3pXWmJJL4Bb4rQ7yEYfxsjnIF29NJIoNC6e5fxOL/qN+9KCz7AaLpN8zI415N2i2EptpGrkRIjGeAuvR6IY1hSFLFUOug9Ms2M7ZxIUNytm1mnME186sdI2BOCwAyQMg54ugzSmKmwbPwSbolKH+hbAtQdsOoF+BsF3anUVwBdiOWRidFZDKTTrKEAJTm3GVrGkHzw/uPZbyx7DNNLfB7KGmRsCcr+/gjaiPSpAOTyX9qG4L/XBDdWXDDf1M+wtQ5fwCOtcb4Dto6VpLmzByB6gqdHbTItGSJdAGqibJQhmRfCF7IN4beSF2G9CqnGXQrxofXU+EykllNeoczRgYytDKMubDIRK0g5MF8rE69cGu0u9nlUcqaUZ41W0qK2nGcSzr4D2wV9U9wxp1rnpxn8agXAOHMQ9cy9kbHM7ngY4gFb03TxrO/yfBUifTtXt78jCrjY/jgEFnMn45LuNWUtknuu7NSm7D3QEn3HbatV1Q2jvgIRf1sfODKQaeymxZoMLlTqsq1LF+HvaTqQOzEzUCfni0/eNIA+DfuE3KEtbsegckGmMktTXacnBHPVe687ugkpT+axCkkhBSyRSjWI2xf1KMMVmYiQdWksK9BEFiQoiYLIlvJA3/zeTzCejP0RbB6YPbhZuB+0pR3KcdX0LaJtju0ZgBL8Bd+sbz2QIaU2OfBX3BaQLsgZysQtrk0M8Sh1A0w3DyyYnGnAiZ4gqZ/TvI2A8OGd1YIbF7+F3P+B6dYpYdsJNZgrjO0UdOIhmom0nwL0pnfnzkL1803jAoKhvyAAAAAElFTkSuQmCC" alt="License"></a>
     <a href="https://github.com/icelam/deno-wikipedia-cli/actions?query=workflow%3A%22Unit+test%22"><img height="20" src="https://github.com/icelam/deno-wikipedia-cli/workflows/Unit%20test/badge.svg" alt="Unit test"></a>
@@ -15,7 +15,7 @@
 </p>
 
 ## Important Notes
-This is a experimental project written in [Deno](https://github.com/denoland/deno) version 1.2.0, with `std` version 0.61.0. Some feature might be unstable at the moment.
+This is a experimental project written in [Deno](https://github.com/denoland/deno) version 1.2.1, with `std` version 0.62.0. Some feature might be unstable at the moment.
 
 ## Features
 * Get a Wikipedia page
