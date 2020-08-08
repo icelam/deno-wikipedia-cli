@@ -44,4 +44,4 @@ first-release:
 
 # Create a new release
 release:
-	@npx standard-version --first-release
+	@npx standard-version
