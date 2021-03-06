@@ -45,7 +45,7 @@ const displayHelp = async (): Promise<void> => {
 
   const cliDescription: string = bold(green('Search anything on Wikipedia from your terminal'));
   const cliPoweredBy = ' -- Powered by Wikipedia REST API';
-  const cliDenoVersionNote: string = gray('An experimental project written in Deno. (Deno version 1.2.2, std version 0.63.0)');
+  const cliDenoVersionNote: string = gray('An experimental project written in Deno. (Deno version 1.8.0, std version 0.89.0)');
   const cliRepository: string = yellow('Github: https://github.com/icelam/deno-wikipedia-cli');
 
   const helpTable = new AsciiTable().removeBorder();
